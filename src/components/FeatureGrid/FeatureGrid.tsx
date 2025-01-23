@@ -1,20 +1,21 @@
 import { useStaticQuery, graphql, Link } from "gatsby";
 import React from "react";
 import FeatureCard from "./FeatureCard";
-
-
+import { StaticImage } from "gatsby-plugin-image";
 // Feature Grid Component rendering a Feature Card
 const FeatureGrid = () => {
     const staticData = [
       {
-        icon: "M",
-        title: "Multimodal annotation",
-        description: " Efficiency label data ",
+        icon: "../images/icon.pngss",
+        title: "Simplify data cleansing",
+        description:
+          "Build balanced and representative datasets by identifying underrepresented visual quality metrics and corrupt images to enhance AI model performance.",
       },
       {
         icon: "M",
         title: "Multimodal annotation",
-        description: " Efficiency label data ",
+        description:
+          "Visually inspect data outliers with embedding plots. Find underrepresented areas of your datasets and fill these gaps.",
       },
     ];
     return (

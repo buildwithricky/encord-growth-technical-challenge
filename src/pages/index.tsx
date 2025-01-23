@@ -7,11 +7,10 @@ import CallToAction from "../components/CallToActionSection/CallToAction"
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-  <main>
+  <main className="relative max-w-6xl py-10 mx-auto sm:px-12 xl:px-0">
     <HeroSection/>
     <FeatureGrid/>
-    {/* 
-    <CallToAction/> */}
+    <CallToAction/>
   </main>
   )
 }

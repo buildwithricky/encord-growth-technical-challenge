@@ -1,6 +1,7 @@
 import { useStaticQuery, graphql, Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
+import heroImage from "../../images/hero.png"
 const HeroSection = () => {
   const image = getImage(
     "https://plus.unsplash.com/premium_photo-1734549547834-5bdb0e12366f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -41,6 +42,7 @@ const HeroSection = () => {
           <GatsbyImage image={image} alt="Your image description" />
         </section>
       </main>
+      <img src={heroImage}/>
     </section>
   );
 };
