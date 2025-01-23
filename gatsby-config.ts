@@ -15,7 +15,7 @@ const config: GatsbyConfig = {
       "accessToken": "-3JH5YHG1fq_moqm_AcEMce-e5AzFaHQbqB6BS2HjTs",
       "spaceId": "tcozsgfqbmef"
     }
-  }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp"]
+  }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp",'gatsby-plugin-postcss']
 };
 
 export default config;
