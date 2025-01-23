@@ -9,7 +9,8 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
   <main>
     <HeroSection/>
-    {/* <FeatureGrid/>
+    <FeatureGrid/>
+    {/* 
     <CallToAction/> */}
   </main>
   )
