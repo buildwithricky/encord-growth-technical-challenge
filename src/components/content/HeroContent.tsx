@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
-import HeroSection from "../HeroSection/HeroSection";
+import HeroSection from "../presentation/HeroSection/HeroSection";
 import React from "react";
 
 const HeroContent  = ()=>{
@@ -31,7 +31,7 @@ const HeroContent  = ()=>{
       heading={heading}
       subHeading={subHeading}
       backgroundImage={image}
-      buttonText={callToActionText}
+      callToActionText={callToActionText}
     />
   );
 };

@@ -1,8 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby";
-import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
-
 import React from "react";
-import CallToAction from "../CallToActionSection/CallToAction";
+import CallToAction from "../presentation/CallToActionSection/CallToAction";
 
 const CallToActionContent = () => {
   const data = useStaticQuery(graphql`

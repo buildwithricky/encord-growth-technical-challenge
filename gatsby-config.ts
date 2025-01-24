@@ -1,5 +1,5 @@
 import type { GatsbyConfig } from "gatsby";
-
+require('dotenv').config();
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `encoding-landing-page`,
@@ -12,8 +12,8 @@ const config: GatsbyConfig = {
   plugins: [{
     resolve: 'gatsby-source-contentful',
     options: {
-      "accessToken": "-3JH5YHG1fq_moqm_AcEMce-e5AzFaHQbqB6BS2HjTs",
-      "spaceId": "tcozsgfqbmef"
+      "accessToken": process.env.CONTENTFUL_ACCESS_TOKEN,
+      "spaceId": process.env.CONTENTFUL_SPACE_ID
     }
   }, "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp",'gatsby-plugin-postcss']
 };

@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import FeatureGrid from "../FeatureGrid/FeatureGrid";
+import FeatureGrid from "../presentation/FeatureGrid/FeatureGrid";
 
 const FeatureGridContent = () => {
   const data = useStaticQuery(graphql`
