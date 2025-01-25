@@ -12,8 +12,9 @@ const FeatureGrid:React.FC<FeatureGridProps> = ({features}) => {
         <article
           className="py-10  xl:mx-11  gap-2 xs:gap-2.5  sm:gap-6 grid sm:grid sm:grid-cols-3"
         >
-          {features.map((feature: Feature) => (
+          {features.map((feature: Feature , index) => (
             <FeatureCard
+            key={index}
               icon={feature?.icon}
               title={feature?.title}
               description={feature?.description.description}

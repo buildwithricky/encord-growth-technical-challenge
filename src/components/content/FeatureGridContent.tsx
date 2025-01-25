@@ -21,9 +21,7 @@ const FeatureGridContent = () => {
       }
     }
   `);
-  console.log(data);
   const {title, features} = data.contentfulFeatureGroup
-  console.log(title, features)
   return (
     <FeatureGrid
      title = { title}
