@@ -4,18 +4,18 @@ module.exports = {
     "./src/pages/*.{js,jsx,ts,tsx}",
     "./src/components/**/*.{js,jsx,ts,tsx}",
   ],
- theme: {
+  theme: {
     extend: {
       colors: {
-        primary: '#6246EA',
-        secondary: '#6B7280', 
-        gradientStart: '#EAE2FF',
-        gradientEnd: '#FFFFFF',
+        primary: "#6246EA",
+        secondary: "#2E2D2D",
+        gradientStart: "#EAE2FF",
+        gradientEnd: "#FFFFFF",
       },
       fontFamily: {
-        sans: ['Inter', 'Arial', 'sans-serif'], 
+        sans: ["Inter", "Arial", "sans-serif"],
       },
     },
   },
-  plugins: []
-}
+  plugins: [],
+};
