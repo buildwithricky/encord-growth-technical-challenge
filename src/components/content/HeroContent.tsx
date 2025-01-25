@@ -3,6 +3,8 @@ import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
 import HeroSection from "../presentation/HeroSection/HeroSection";
 import React from "react";
 
+
+//Hero section content layer
 const HeroContent  = ()=>{
     const data = useStaticQuery(graphql`
       query {

@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import CallToAction from "../presentation/CallToActionSection/CallToAction";
 
+// Call to action content layer
 const CallToActionContent = () => {
   const data = useStaticQuery(graphql`
     query {
