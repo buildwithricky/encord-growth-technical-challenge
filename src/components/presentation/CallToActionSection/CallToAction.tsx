@@ -10,13 +10,15 @@ interface CallToActionProps {
   callToActionUrl:string;
 }
 
+// Call to action component
+
 const CallToAction:React.FC<CallToActionProps> = ({heading,subHeading,callToActionText,callToActionUrl}) => {
     const data = useStaticQuery(graphql`
       query {
         allFile(filter: { extension: { regex: "/(jpg|jpeg|png|gif)/" } }) {
           nodes {
             childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
+              gatsbyImageData(layout: CONSTRAINED)
             }
             name
           }
@@ -25,7 +27,7 @@ const CallToAction:React.FC<CallToActionProps> = ({heading,subHeading,callToActi
     `);
 
     return (
-      <section className=" mt-5 bg-primary relative w-full mb-10 lg:px-32 z-10 lg:py-20 sm:px-9 px-4 py-16 sm:mx-auto text-center text-white rounded-2.5xl d  max-w-7xl ">
+      <section className="relative z-10 w-full px-4 py-16 mt-5 mb-10 text-center text-white rounded-md bg-primary lg:px-32 lg:py-20 sm:px-9 sm:mx-auto max-w-7xl">
         {data.allFile.nodes.map((image:any, index:any) => {
           const imageData = getImage(image.childImageSharp);
           return (
@@ -33,7 +35,11 @@ const CallToAction:React.FC<CallToActionProps> = ({heading,subHeading,callToActi
               key={index}
               className="h-full w-full absolute inset-0 -z-10 rounded-2.5xl"
             >
-              <GatsbyImage image={imageData} alt={image.name} />
+              <GatsbyImage
+                image={imageData}
+                alt={image.name}
+                className="w-full h-full object-cover rounded-2.5xl"
+              />
             </div>
           );
         })}

@@ -23,7 +23,6 @@ const CallToActionContent = () => {
     <CallToAction
       heading={heading}
       subHeading={subHeading}
-    //   backgroundImage={image}
       callToActionText={callToActionText}
       callToActionUrl={callToActionUrl}
     />

@@ -18,6 +18,7 @@ interface SEOProps {
   };
 }
 // TODO: Add navbar and footer here if required
+//Index Page
 const IndexPage: React.FC<PageProps<SEOProps>> = ({ data }) => {
   const { title, description,author,siteUrl } = data.site.siteMetadata;
 
