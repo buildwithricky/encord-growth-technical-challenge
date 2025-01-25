@@ -29,12 +29,11 @@ const CallToAction:React.FC<CallToActionProps> = ({heading,subHeading,callToActi
         {data.allFile.nodes.map((image:any, index:any) => {
           const imageData = getImage(image.childImageSharp);
           return (
-            <div key={index}>
-              <GatsbyImage
-                image={imageData}
-                alt={image.name}
-                className="h-full w-full absolute inset-0 -z-10 rounded-2.5xl"
-              />
+            <div
+              key={index}
+              className="h-full w-full absolute inset-0 -z-10 rounded-2.5xl"
+            >
+              <GatsbyImage image={imageData} alt={image.name} />
             </div>
           );
         })}
