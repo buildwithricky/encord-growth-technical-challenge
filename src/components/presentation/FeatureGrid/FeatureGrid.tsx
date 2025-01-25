@@ -8,7 +8,7 @@ interface FeatureGridProps {
 }
 const FeatureGrid:React.FC<FeatureGridProps> = ({features}) => {
     return (
-      <section className="relative mx-auto mr-4 overflow-x-auto border-none sm:px-0 smooth-scroll">
+      <section className="relative px-4 mx-auto overflow-x-auto border-none sm:px-0 smooth-scroll">
         <article
           className="py-10  xl:mx-11  gap-2 xs:gap-2.5  sm:gap-6 grid sm:grid sm:grid-cols-3"
         >
